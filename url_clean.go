@@ -1,14 +1,27 @@
 package main
 
 import (
+	"flag"
+	"fmt"
 	"net/http"
+	"os"
 
 	"kirisakow/url_tools/url_cleaner"
 
 	"github.com/gin-gonic/gin"
 )
 
+func init() {
+	flag.String("port", "", "Port number to bind the server to")
+	flag.Parse()
+}
+
 func main() {
+	port := flag.Lookup("port").Value.String()
+	if port == "" {
+		fmt.Println("The required flag --port is missing")
+		os.Exit(1)
+	}
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	// test:
@@ -26,5 +39,5 @@ func main() {
 		c.String(http.StatusOK, clean_url+"\n")
 	})
 
-	router.Run("127.0.0.1:3000")
+	router.Run(fmt.Sprintf(":%s", port))
 }
