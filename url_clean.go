@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"kirisakow/url_tools/url_cleaner"
+	"github.com/kirisakow/url_tools/url_cleaner"
 
 	"github.com/gin-gonic/gin"
 )

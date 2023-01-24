@@ -1,8 +1,8 @@
-module kirisakow/api/url_clean
+module github.com/kirisakow/api/url_clean
 
 go 1.19
 
-replace kirisakow/url_tools/url_cleaner => ../url_tools/url_cleaner
+replace github.com/kirisakow/url_tools/url_cleaner => ../url_tools/url_cleaner
 
 require github.com/gin-gonic/gin v1.8.2
 
@@ -13,6 +13,7 @@ require (
 	github.com/go-playground/validator/v10 v10.11.1 // indirect
 	github.com/goccy/go-json v0.9.11 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/kirisakow/url_tools/url_cleaner v0.0.0-00010101000000-000000000000
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
@@ -25,5 +26,4 @@ require (
 	golang.org/x/text v0.5.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	kirisakow/url_tools/url_cleaner v0.0.0-00010101000000-000000000000 // indirect
 )
