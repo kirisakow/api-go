@@ -1,4 +1,7 @@
-### This is the Go function `url_clean` (it cleans any given URL of junk query parameters; for source code, see [url_tools](https://github.com/kirisakow/url_tools#go-function-url_clean)) implemented as REST API with [gin](https://github.com/gin-gonic/).
+### This is a REST API implementation of a Go function which cleans any given URL of junk query parameters
+
+* Core dependency: [`"kirisakow/url_tools/url_cleaner"`](https://github.com/kirisakow/url_tools#go-function-url_clean)
+* Framework: [gin](https://github.com/gin-gonic/)
 
 ## Examples
 
