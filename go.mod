@@ -2,7 +2,7 @@ module kirisakow/api/url_clean
 
 go 1.19
 
-replace kirisakow/url_tools/url_cleaner => ../url_tools/url_cleaner
+replace kirisakow/url_tools/url_cleaner => ../url_tools/url_clean/url_cleaner
 
 require github.com/gin-gonic/gin v1.8.2
 
@@ -25,5 +25,5 @@ require (
 	golang.org/x/text v0.5.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	kirisakow/url_tools/url_cleaner v0.0.0-00010101000000-000000000000 // indirect
+	kirisakow/url_tools/url_cleaner v0.0.0-00010101000000-000000000000
 )
