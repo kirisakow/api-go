@@ -1,3 +1,5 @@
+**WARNING** This library is still under development and intended for experimental purposes only.
+
 ### This is a REST API implementation of a Go function which cleans any given URL of junk query parameters
 
 * Core dependency: [`"kirisakow/url_tools/url_cleaner"`](https://github.com/kirisakow/url_tools#go-function-url_clean)
