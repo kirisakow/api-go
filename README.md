@@ -25,7 +25,7 @@ cd api-go
 go build .
 
 # run as a transient systemd service
-sudo systemd-run /absolute/path/to/binary --port $PORT_NUM_AS_ENV_VAR
+sudo systemd-run --uid=myuser --gid=myuser --same-dir --unit=api-go_$(date +%Y%m%d_%H%M%S)_myuser /home/myuser/api-go/url_clean --port $PORT_NUM_AS_ENV_VAR
 ```
 
 #### 2. Configure Nginx as reverse proxy, typically:
