@@ -1,6 +1,8 @@
 module kirisakow/api/url_clean
 
-go 1.19
+go 1.21
+
+toolchain go1.21.1
 
 replace kirisakow/url_tools/url_cleaner => ../url_tools/url_clean/url_cleaner
 
